@@ -1,0 +1,11 @@
+-batch 
+-create my_lcd 
+-ver 1.00.a 
+-dir "C:\hlocal\Practica5" 
+-lang vhdl 
+-bus plbv46 s 
+-rfifo 4 512 
+-wfifo 4 512 
+-xps 
+-ise 
+-driver 

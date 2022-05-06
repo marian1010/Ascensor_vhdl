@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[31].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[30].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[29].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[28].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[0].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[1].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[2].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[3].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[4].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[5].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[6].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[7].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[8].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[9].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_MARKREG_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[0].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[1].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[2].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[3].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[4].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[5].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[6].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[7].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[8].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_VACANCY.I_VAC_CALC/I_ADDSUB_GEN[9].Counter_Bit_I/FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">my_lcd_0/my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/INCLUDE_PACKET_FEATURES.I_MARKREG_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+</msg>
+
+</messages>
+

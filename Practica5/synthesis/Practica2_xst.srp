@@ -1,0 +1,960 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:\uni\4\SE\Practica5\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "Practica2_xst.prj"
+Verilog Include Directory          : {"E:\uni\4\SE\Practica5\pcores\" "E:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "E:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s1000ft256-5
+Output File Name                   : "../implementation/Practica2.ngc"
+
+---- Source Options
+Top Module Name                    : Practica2
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" in Library work.
+Entity <Practica2> compiled.
+Entity <Practica2> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Practica2> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Practica2> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'INTERRUPT_ACK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'MB_Halted' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'MB_Error' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'LOCKSTEP_OUT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'INSTR_ADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'IFETCH' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'I_AS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DATA_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DATA_ADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'D_AS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'READ_STROBE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'WRITE_STROBE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'BYTE_ENABLE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_AWVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_WDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_WSTRB' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_WLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_WVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_BREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_ARVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IP_RREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_AWVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_WDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_WSTRB' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_WLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_WVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_BREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_ARVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DP_RREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_AWUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_WDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_WSTRB' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_WLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_WVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_WUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_BREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_ARUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_IC_RREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_AWUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_WDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_WSTRB' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_WLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_WVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_WUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_BREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARADDR' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARLEN' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARBURST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARPROT' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARQOS' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_ARUSER' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M_AXI_DC_RREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DBG_TDO' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Instruction' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Valid_Instr' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_PC' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Reg_Write' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Reg_Addr' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_MSR_Reg' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_PID_Reg' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_New_Reg_Value' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Exception_Taken' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Exception_Kind' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Jump_Taken' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Delay_Slot' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Address' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Access' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Read' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Write' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Write_Value' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Data_Byte_Enable' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_DCache_Req' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_DCache_Hit' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_DCache_Rdy' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_DCache_Read' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_ICache_Req' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_ICache_Hit' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_ICache_Rdy' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_OF_PipeRun' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_EX_PipeRun' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_MEM_PipeRun' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_MB_Halted' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'Trace_Jump_Hit' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL0_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL1_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL2_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL3_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL4_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL5_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL6_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL7_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL8_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL9_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL10_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL11_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL12_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL13_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL14_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_S_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_S_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_M_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_M_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_M_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'FSL15_M_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M0_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M0_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M0_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S0_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M1_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M1_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M1_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S1_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M2_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M2_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M2_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S2_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M3_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M3_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M3_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S3_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M4_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M4_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M4_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S4_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M5_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M5_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M5_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S5_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M6_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M6_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M6_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S6_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M7_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M7_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M7_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S7_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M8_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M8_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M8_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S8_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M9_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M9_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M9_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S9_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M10_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M10_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M10_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S10_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M11_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M11_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M11_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S11_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M12_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M12_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M12_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S12_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M13_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M13_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M13_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S13_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M14_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M14_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M14_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S14_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M15_AXIS_TLAST' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M15_AXIS_TDATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'M15_AXIS_TVALID' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'S15_AXIS_TREADY' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1207: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'Practica2_microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1861: Unconnected output port 'BRAM_Din_B' of component 'Practica2_bram_block_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_addrAck' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_SSize' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_wait' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rearbitrate' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_wrDAck' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_wrComp' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_wrBTerm' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rdDBus' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rdWdAddr' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rdDAck' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rdComp' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_rdBTerm' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_MBusy' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_MWrErr' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_MRdErr' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'Sl_MIRQ' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'IP2INTC_Irpt' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'GPIO_IO_O' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'GPIO_IO_T' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'GPIO2_IO_O' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1879: Unconnected output port 'GPIO2_IO_T' of component 'Practica2_leds_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_addrAck' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_SSize' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_wait' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rearbitrate' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_wrDAck' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_wrComp' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_wrBTerm' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rdDBus' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rdWdAddr' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rdDAck' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rdComp' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_rdBTerm' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_MBusy' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_MWrErr' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_MRdErr' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'Sl_MIRQ' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'IP2INTC_Irpt' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'GPIO_IO_O' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'GPIO_IO_T' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'GPIO2_IO_O' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1932: Unconnected output port 'GPIO2_IO_T' of component 'Practica2_switches_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 1985: Unconnected output port 'Interrupt' of component 'Practica2_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_Rst' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'MPLB_Rst' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_dcrAck' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_dcrDBus' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SaddrAck' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SMRdErr' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SMWrErr' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SMBusy' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SrdBTerm' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SrdComp' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SrdDAck' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SrdDBus' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SrdWdAddr' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_Srearbitrate' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_Sssize' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_Swait' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SwrBTerm' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SwrComp' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'PLB_SwrDAck' of component 'Practica2_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "E:/uni/4/SE/Practica5/hdl/Practica2.vhd" line 2034: Unconnected output port 'Bus_Error_Det' of component 'Practica2_plb_v46_0_wrapper'.
+Entity <Practica2> analyzed. Unit <Practica2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Practica2>.
+    Related source file is "E:/uni/4/SE/Practica5/hdl/Practica2.vhd".
+Unit <Practica2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/Practica2_microblaze_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_xps_bram_if_cntlr_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_bram_block_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_leds_wrapper.ngc>.
+Reading core <../implementation/Practica2_switches_wrapper.ngc>.
+Reading core <../implementation/Practica2_xps_uartlite_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_plb_v46_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_my_multiple_periferic_0_wrapper.ngc>.
+Reading core <../implementation/Practica2_my_lcd_0_wrapper.ngc>.
+Loading core <Practica2_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <Practica2_xps_bram_if_cntlr_0_wrapper> for timing and area information for instance <xps_bram_if_cntlr_0>.
+Loading core <Practica2_bram_block_0_wrapper> for timing and area information for instance <bram_block_0>.
+Loading core <Practica2_leds_wrapper> for timing and area information for instance <leds>.
+Loading core <Practica2_switches_wrapper> for timing and area information for instance <switches>.
+Loading core <Practica2_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
+Loading core <Practica2_plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
+Loading core <Practica2_my_multiple_periferic_0_wrapper> for timing and area information for instance <my_multiple_periferic_0>.
+Loading core <Practica2_my_lcd_0_wrapper> for timing and area information for instance <my_lcd_0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance ramb16_s2_s2_0 in unit ramb16_s2_s2_0 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_1 in unit ramb16_s2_s2_1 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_2 in unit ramb16_s2_s2_2 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_3 in unit ramb16_s2_s2_3 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_4 in unit ramb16_s2_s2_4 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_5 in unit ramb16_s2_s2_5 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_6 in unit ramb16_s2_s2_6 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_7 in unit ramb16_s2_s2_7 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_8 in unit ramb16_s2_s2_8 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_9 in unit ramb16_s2_s2_9 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_10 in unit ramb16_s2_s2_10 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_11 in unit ramb16_s2_s2_11 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_12 in unit ramb16_s2_s2_12 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_13 in unit ramb16_s2_s2_13 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_14 in unit ramb16_s2_s2_14 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_15 in unit ramb16_s2_s2_15 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit my_lcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit my_lcd_0/RDPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
+
+Optimizing unit <Practica2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 6 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/Practica2.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 4635
+#      GND                         : 27
+#      INV                         : 107
+#      LUT1                        : 181
+#      LUT2                        : 418
+#      LUT2_D                      : 14
+#      LUT2_L                      : 25
+#      LUT3                        : 912
+#      LUT3_D                      : 33
+#      LUT3_L                      : 37
+#      LUT4                        : 1336
+#      LUT4_D                      : 50
+#      LUT4_L                      : 41
+#      MULT_AND                    : 34
+#      MUXCY                       : 537
+#      MUXCY_L                     : 161
+#      MUXF5                       : 344
+#      VCC                         : 8
+#      XORCY                       : 370
+# FlipFlops/Latches                : 2678
+#      FD                          : 61
+#      FDC                         : 75
+#      FDCE                        : 22
+#      FDE                         : 199
+#      FDP                         : 3
+#      FDPE                        : 8
+#      FDR                         : 1012
+#      FDRE                        : 1080
+#      FDRS                        : 80
+#      FDRSE                       : 5
+#      FDS                         : 71
+#      FDSE                        : 62
+# RAMS                             : 210
+#      RAM16X1D                    : 192
+#      RAMB16                      : 18
+# Shift Registers                  : 100
+#      SRL16                       : 16
+#      SRL16E                      : 84
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 6
+#      OBUF                        : 21
+# MULTs                            : 3
+#      MULT18X18S                  : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                     2439  out of   7680    31%  
+ Number of Slice Flip Flops:           2678  out of  15360    17%  
+ Number of 4 input LUTs:               3638  out of  15360    23%  
+    Number used as logic:              3154
+    Number used as Shift registers:     100
+    Number used as RAMs:                384
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    173    16%  
+ Number of BRAMs:                        18  out of     24    75%  
+ Number of MULT18X18s:                    3  out of     24    12%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)                                                                                     | Load  |
+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+Clk_pin                                                                     | BUFGP                                                                                                     | 2689  |
+N0                                                                          | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)                                             | 280   |
+my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121       | BUFG                                                                                                      | 35    |
+my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co| NONE(my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2)| 3     |
+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                            | NONE(my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/aux1)                                                               | 108   |
+microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.947ns (Maximum Frequency: 83.702MHz)
+   Minimum input arrival time before clock: 5.545ns
+   Maximum output required time after clock: 8.005ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_pin'
+  Clock period: 11.947ns (frequency: 83.702MHz)
+  Total number of paths / destination ports: 386526 / 8125
+-------------------------------------------------------------------------
+Delay:               11.947ns (Levels of Logic = 35)
+  Source:            my_lcd_0/my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
+  Destination:       my_lcd_0/my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_0 (FF)
+  Source Clock:      Clk_pin rising
+  Destination Clock: Clk_pin rising
+
+  Data Path: my_lcd_0/my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 to my_lcd_0/my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   1.040  my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count<2>)
+     LUT1:I0->O            1   0.479   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
+     XORCY:CI->O           9   0.786   1.250  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (my_lcd_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
+     LUT2:I0->O            1   0.479   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3)
+     MUXCY:S->O            1   0.435   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_2 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>3)
+     MUXCY:CI->O           6   0.265   1.148  my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_1 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>2)
+     LUT4_D:I0->O          2   0.479   0.768  my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119)
+     LUT4_D:I3->O         15   0.479   1.180  my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>1 (my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>)
+     FD:D                      0.176          my_lcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_9
+    ----------------------------------------
+    Total                     11.947ns (6.561ns logic, 5.387ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'N0'
+  Clock period: 5.313ns (frequency: 188.234MHz)
+  Total number of paths / destination ports: 1108 / 270
+-------------------------------------------------------------------------
+Delay:               5.313ns (Levels of Logic = 2)
+  Source:            leds/leds/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout (FF)
+  Destination:       leds/leds/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7 (FF)
+  Source Clock:      N0 rising
+  Destination Clock: N0 rising
+
+  Data Path: leds/leds/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout to leds/leds/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.626   1.148  leds/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout (leds/PLBV46_I/I_SLAVE_ATTACHMENT/data_timeout)
+     LUT3:I0->O            8   0.479   0.944  leds/PLBV46_I/I_SLAVE_ATTACHMENT/dpto_cntr_ld_en1 (leds/PLBV46_I/I_SLAVE_ATTACHMENT/dpto_cntr_ld_en)
+     LUT4:I3->O            2   0.479   0.745  leds/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<8>1 (leds/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<8>1)
+     FDS:S                     0.892          leds/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7
+    ----------------------------------------
+    Total                      5.313ns (2.476ns logic, 2.837ns route)
+                                       (46.6% logic, 53.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121'
+  Clock period: 6.134ns (frequency: 163.038MHz)
+  Total number of paths / destination ports: 1537 / 58
+-------------------------------------------------------------------------
+Delay:               6.134ns (Levels of Logic = 7)
+  Source:            my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_7 (FF)
+  Destination:       my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_1 (FF)
+  Source Clock:      my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121 rising
+  Destination Clock: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_7 to my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_7 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count<7>)
+     LUT4:I0->O            1   0.479   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           5   0.265   0.806  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<4> (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/timerEnd)
+     LUT4:I3->O           20   0.479   1.313  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_not00011 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_not0001)
+     FDCE:CE                   0.524          my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/count_1
+    ----------------------------------------
+    Total                      6.134ns (2.974ns logic, 3.160ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co'
+  Clock period: 2.882ns (frequency: 346.933MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.882ns (Levels of Logic = 1)
+  Source:            my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3 (FF)
+  Destination:       my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3 (FF)
+  Source Clock:      my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co rising
+  Destination Clock: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co rising
+
+  Data Path: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3 to my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.626   0.921  my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3 (my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3)
+     INV:I->O              1   0.479   0.681  my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3-In1_INV_0 (my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3-In)
+     FDCE:D                    0.176          my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd3
+    ----------------------------------------
+    Total                      2.882ns (1.281ns logic, 1.601ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
+  Total number of paths / destination ports: 297 / 297
+-------------------------------------------------------------------------
+Offset:              4.463ns (Levels of Logic = 2)
+  Source:            Rst_pin (PAD)
+  Destination:       microblaze_0/microblaze_0/LOCKSTEP_Out_3765 (FF)
+  Destination Clock: Clk_pin rising
+
+  Data Path: Rst_pin to microblaze_0/microblaze_0/LOCKSTEP_Out_3765
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           295   0.715   2.856  Rst_pin_IBUF (Rst_pin_IBUF)
+     begin scope: 'microblaze_0'
+     FDR:R                     0.892          microblaze_0/LOCKSTEP_Out_111
+    ----------------------------------------
+    Total                      4.463ns (1.607ns logic, 2.856ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 73 / 16
+-------------------------------------------------------------------------
+Offset:              5.545ns (Levels of Logic = 5)
+  Source:            R_pin<1> (PAD)
+  Destination:       my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/regcode_0 (FF)
+  Destination Clock: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: R_pin<1> to my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/regcode_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  R_pin_1_IBUF (R_pin_1_IBUF)
+     begin scope: 'my_multiple_periferic_0'
+     LUT4:I0->O            2   0.479   1.040  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/xCode<0>11 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/N01)
+     LUT4:I0->O            1   0.479   0.976  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10)
+     LUT2:I0->O            1   0.479   0.000  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>21 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>)
+     FDCE:D                    0.176          my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+    ----------------------------------------
+    Total                      5.545ns (2.328ns logic, 3.217ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              7.648ns (Levels of Logic = 3)
+  Source:            my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_ctl_2 (FF)
+  Destination:       control_motor_pin<2> (PAD)
+  Source Clock:      Clk_pin rising
+
+  Data Path: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_ctl_2 to control_motor_pin<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.626   0.953  my_multiple_periferic_0/USER_LOGIC_I/motor_ctl_2 (my_multiple_periferic_0/USER_LOGIC_I/motor_ctl<2>)
+     LUT4:I1->O            1   0.479   0.681  my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/motor<1>1 (control_motor<2>)
+     end scope: 'my_multiple_periferic_0'
+     OBUF:I->O                 4.909          control_motor_pin_2_OBUF (control_motor_pin<2>)
+    ----------------------------------------
+    Total                      7.648ns (6.014ns logic, 1.634ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              7.896ns (Levels of Logic = 3)
+  Source:            my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2 (FF)
+  Destination:       control_motor_pin<3> (PAD)
+  Source Clock:      my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/divisor_frec/co rising
+
+  Data Path: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2 to control_motor_pin<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.626   1.201  my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2 (my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2)
+     LUT4:I0->O            1   0.479   0.681  my_multiple_periferic_0/USER_LOGIC_I/motor_step_entity/motor<2>1 (control_motor<1>)
+     end scope: 'my_multiple_periferic_0'
+     OBUF:I->O                 4.909          control_motor_pin_1_OBUF (control_motor_pin<1>)
+    ----------------------------------------
+    Total                      7.896ns (6.014ns logic, 1.882ns route)
+                                       (76.2% logic, 23.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              8.005ns (Levels of Logic = 3)
+  Source:            my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd6 (FF)
+  Destination:       S_pin<2> (PAD)
+  Source Clock:      my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: my_multiple_periferic_0/my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd6 to S_pin<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.626   1.245  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd6 (my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd6)
+     LUT3:I0->O            2   0.479   0.745  my_multiple_periferic_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_Out91 (S<2>)
+     end scope: 'my_multiple_periferic_0'
+     OBUF:I->O                 4.909          S_pin_2_OBUF (S_pin<2>)
+    ----------------------------------------
+    Total                      8.005ns (6.014ns logic, 1.991ns route)
+                                       (75.1% logic, 24.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 65.00 secs
+Total CPU time to Xst completion: 65.48 secs
+ 
+--> 
+
+Total memory usage is 4594008 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  391 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+

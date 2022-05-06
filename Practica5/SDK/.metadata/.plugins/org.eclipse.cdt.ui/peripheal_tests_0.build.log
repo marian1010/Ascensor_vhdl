@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project peripheal_tests_0 ****
+
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../hello_world_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c:32:25: fatal error: xparameters.h: No such file or directory
+compilation terminated.
+make: *** [src/testperiph.o] Error 1

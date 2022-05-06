@@ -1,0 +1,46 @@
+
+**** Build of configuration Debug for project peripheral_tests_0 ****
+
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:95:4: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:97:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:129:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'print_numbers':
+../src/testperiph.c:151:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+../src/testperiph.c:151:6: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+../src/testperiph.c: In function 'musica':
+../src/testperiph.c:212:2: warning: excess elements in array initializer [enabled by default]
+../src/testperiph.c:212:2: warning: (near initialization for 'Notas') [enabled by default]
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:244:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c:235:10: warning: unused variable 'old_valor' [-Wunused-variable]
+Finished building: ../src/testperiph.c
+' '
+Building target: peripheral_tests_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"peripheral_tests_0.elf"  ./src/testperiph.o ./src/xbram_example.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: peripheral_tests_0.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size peripheral_tests_0.elf  |tee "peripheral_tests_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18962	   1444	   2274	  22680	   5898	peripheral_tests_0.elf
+Finished building: peripheral_tests_0.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck peripheral_tests_0.elf -hw ../../SE_hw_platform/system.xml -pe microblaze_0  |tee "peripheral_tests_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../SE_hw_platform/system.xml -pe microblaze_0
+peripheral_tests_0.elf 
+
+ELF file	: peripheral_tests_0.elf
+elfcheck passed.
+Finished building: peripheral_tests_0.elf.elfcheck
+' '

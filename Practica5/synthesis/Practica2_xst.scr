@@ -1,0 +1,15 @@
+set -tmpdir E:\uni\4\SE\Practica5\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc3s1000ft256-5
+-top Practica2
+-ifmt MIXED
+-ifn Practica2_xst.prj
+-ofn ../implementation/Practica2.ngc
+-hierarchy_separator /
+-iobuf YES
+-max_fanout 10000
+-sd {../implementation}
+-vlgincdir {"E:\uni\4\SE\Practica5\pcores\" "E:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "E:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

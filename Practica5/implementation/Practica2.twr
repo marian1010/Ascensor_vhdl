@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
+-xml Practica2.twx Practica2.ncd Practica2.pcf
+
+Design file:              Practica2.ncd
+Physical constraint file: Practica2.pcf
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2012-04-23)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk_pin
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.336(R)|   -0.219(R)|Clk_pin_BUFGP     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clk_pin to Pad
+--------------------+------------+------------------+--------+
+                    | clk (edge) |                  | Clock  |
+Destination         |   to PAD   |Internal Clock(s) | Phase  |
+--------------------+------------+------------------+--------+
+TX_pin              |    6.523(R)|Clk_pin_BUFGP     |   0.000|
+control_motor_pin<0>|   11.215(R)|Clk_pin_BUFGP     |   0.000|
+control_motor_pin<1>|   12.489(R)|Clk_pin_BUFGP     |   0.000|
+control_motor_pin<2>|   11.729(R)|Clk_pin_BUFGP     |   0.000|
+control_motor_pin<3>|   12.312(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<0>     |   12.111(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<1>     |   10.393(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<2>     |   11.221(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<3>     |   10.305(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<4>     |    9.622(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<5>     |    9.841(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<6>     |    9.674(R)|Clk_pin_BUFGP     |   0.000|
+lcd_data_pin<7>     |    9.457(R)|Clk_pin_BUFGP     |   0.000|
+lcd_e_pin           |   10.870(R)|Clk_pin_BUFGP     |   0.000|
+lcd_rs_pin          |    8.911(R)|Clk_pin_BUFGP     |   0.000|
+lcd_rw_pin          |   10.238(R)|Clk_pin_BUFGP     |   0.000|
+sonido_pin          |    9.854(R)|Clk_pin_BUFGP     |   0.000|
+--------------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk_pin
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_pin        |   11.149|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Dec 20 17:11:22 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4569 MB
+
+
+

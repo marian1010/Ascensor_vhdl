@@ -1,0 +1,101 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT RX_pin = xps_uartlite_0_RX, DIR = I
+ PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT Rst_pin = microblaze_0_MB_RESET_0, DIR = I, SIGIS = RST
+ PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT lcd_rw_pin = my_lcd_0_rw, DIR = O
+ PORT lcd_rs_pin = my_lcd_0_rs, DIR = O
+ PORT lcd_e_pin = my_lcd_0_e, DIR = O
+ PORT lcd_data_pin = my_lcd_0_lcd_data, DIR = O, VEC = [7:0]
+ PORT sonido_pin = my_multiple_periferic_0_sonido, DIR = O
+ PORT control_motor_pin = my_multiple_periferic_0_control_motor, DIR = O, VEC = [3:0]
+ PORT S_pin = my_multiple_periferic_0_S, DIR = O, VEC = [3:0]
+ PORT R_pin = my_multiple_periferic_0_R, DIR = I, VEC = [3:0]
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.30.a
+ BUS_INTERFACE IPLB = plb_v46_0
+ BUS_INTERFACE DPLB = plb_v46_0
+ PORT MB_RESET = microblaze_0_MB_RESET_0
+END
+
+BEGIN xps_bram_if_cntlr
+ PARAMETER INSTANCE = xps_bram_if_cntlr_0
+ PARAMETER HW_VER = 1.00.b
+ PARAMETER C_SPLB_NATIVE_DWIDTH = 32
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+ BUS_INTERFACE SPLB = plb_v46_0
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = leds
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x84038000
+ PARAMETER C_HIGHADDR = 0x840381ff
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = switches
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x840181ff
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_BASEADDR = 0x84000000
+ PARAMETER C_HIGHADDR = 0x8400ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = xps_uartlite_0_RX
+ PORT TX = xps_uartlite_0_TX
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = plb_v46_0_PLB_Clk
+ PORT SYS_Rst = microblaze_0_MB_RESET_0
+END
+
+BEGIN my_multiple_periferic
+ PARAMETER INSTANCE = my_multiple_periferic_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x8401ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT sonido = my_multiple_periferic_0_sonido
+ PORT control_motor = my_multiple_periferic_0_control_motor
+ PORT S = my_multiple_periferic_0_S
+ PORT R = my_multiple_periferic_0_R
+END
+
+BEGIN my_lcd
+ PARAMETER INSTANCE = my_lcd_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84010000
+ PARAMETER C_HIGHADDR = 0x84017fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT rw = my_lcd_0_rw
+ PORT rs = my_lcd_0_rs
+ PORT e = my_lcd_0_e
+ PORT lcd_data = my_lcd_0_lcd_data
+END
+

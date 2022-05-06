@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          E:\uni\4\SE\Practica5/drivers/my_motor_v1_00_a/data/my_motor_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Mon Dec 13 12:10:53 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER my_motor
+
+  OPTION supported_peripherals = (my_motor);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

@@ -1,0 +1,86 @@
+
+bitinit version Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File Practica2.mhs...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0x84010000-0x84017fff) my_lcd_0	plb_v46_0
+  (0x84018000-0x8401ffff) my_multiple_periferic_0	plb_v46_0
+
+
+WARNING:EDK:2137 - Peripheral leds is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral switches is not accessible from any processor in
+   the system. Check Bus Interface connections and address parameters. 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \xps_uartlite_v1_02_a\data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores
+   \plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: my_multiple_periferic, INSTANCE:my_multiple_periferic_0
+   - tool is overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   C:\hlocal\Practica5\pcores\my_multiple_periferic_v1_00_a\data\my_multiple_per
+   iferic_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: my_multiple_periferic, INSTANCE:my_multiple_periferic_0
+   - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\hlocal\Practica5\pcores\my_multiple_periferic_v1_00_a\data\my_multiple_per
+   iferic_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: my_multiple_periferic, INSTANCE:my_multiple_periferic_0
+   - tool is overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\hlocal\Practica5\pcores\my_multiple_periferic_v1_00_a\data\my_multiple_per
+   iferic_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: my_lcd, INSTANCE:my_lcd_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   C:\hlocal\Practica5\pcores\my_lcd_v1_00_a\data\my_lcd_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: my_lcd, INSTANCE:my_lcd_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\hlocal\Practica5\pcores\my_lcd_v1_00_a\data\my_lcd_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: my_lcd, INSTANCE:my_lcd_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\hlocal\Practica5\pcores\my_lcd_v1_00_a\data\my_lcd_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/Practica2_bd" -p xc3s1000ft256-5 -bt
+"implementation/Practica2.bit"  -bd
+"SDK/peripheral_tests_0/Debug/peripheral_tests_0.elf" tag microblaze_0  -o b
+implementation/download.bit 
+Memory Initialization completed successfully.
+

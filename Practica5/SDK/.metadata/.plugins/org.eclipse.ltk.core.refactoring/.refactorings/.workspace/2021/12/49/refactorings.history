@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;peripheral_tests_bsp_0/microblaze_0/include/my_lcd.h&apos;" deleteContents="false" description="Delete resource &apos;peripheral_tests_bsp_0/microblaze_0/include/my_lcd.h&apos;" element1="/peripheral_tests_bsp_0/microblaze_0/include/my_lcd.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1639234770974"/>
+</session>

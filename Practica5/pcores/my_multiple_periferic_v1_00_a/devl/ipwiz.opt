@@ -1,0 +1,10 @@
+-batch 
+-create my_multiple_periferic 
+-ver 1.00.a 
+-dir "E:\uni\4\SE\Practica5" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 4 
+-xps 
+-ise 
+-driver 

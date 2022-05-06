@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\hlocal\Practica5\pcores\my_lcd_v1_00_a\devl\synthesis\my_lcd_xst.prj"
+-top my_lcd
+-p virtex6
+-ofn "C:\hlocal\Practica5\pcores\my_lcd_v1_00_a\devl\synthesis\my_lcd_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib my_lcd_v1_00_a

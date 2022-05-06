@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project peripheral_tests_0 ****
+
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c:101:4: warning: "/*" within comment [-Wcomment]
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:164:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:169:33: error: 'XPAR_LEDS_DEVICE_ID' undeclared (first use in this function)
+../src/testperiph.c:169:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/testperiph.c:173:36: error: 'XPAR_SWITCHES_DEVICE_ID' undeclared (first use in this function)
+make: *** [src/testperiph.o] Error 1

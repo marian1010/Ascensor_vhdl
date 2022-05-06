@@ -1,0 +1,13 @@
+##############################################################################
+## Filename:          E:/uni/4/SE/Practica5/pcores/my_multiple_periferic_v1_00_a/data/my_multiple_periferic_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Dec 14 12:09:27 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib my_multiple_periferic_v1_00_a user_logic vhdl
+lib my_multiple_periferic_v1_00_a my_multiple_periferic vhdl
+lib my_multiple_periferic_v1_00_a teclaDetect vhdl
+lib my_multiple_periferic_v1_00_a one_hundred_k_counter vhdl
+lib my_multiple_periferic_v1_00_a motorstep vhdl

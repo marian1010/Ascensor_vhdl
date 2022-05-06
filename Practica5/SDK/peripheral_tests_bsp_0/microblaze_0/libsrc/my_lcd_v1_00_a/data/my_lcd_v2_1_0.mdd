@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\hlocal\Practica5/drivers/my_lcd_v1_00_a/data/my_lcd_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Mon Nov 29 16:05:45 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER my_lcd
+
+  OPTION supported_peripherals = (my_lcd);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

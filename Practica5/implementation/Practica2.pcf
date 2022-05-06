@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Mon Dec 20 17:11:01 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clk_pin" LOCATE = SITE "P8" LEVEL 1;
+COMP "Rst_pin" LOCATE = SITE "K4" LEVEL 1;
+COMP "lcd_e_pin" LOCATE = SITE "H1" LEVEL 1;
+COMP "R_pin<0>" LOCATE = SITE "P1" LEVEL 1;
+COMP "R_pin<1>" LOCATE = SITE "M4" LEVEL 1;
+COMP "R_pin<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "R_pin<3>" LOCATE = SITE "J14" LEVEL 1;
+COMP "S_pin<0>" LOCATE = SITE "G1" LEVEL 1;
+COMP "S_pin<1>" LOCATE = SITE "G3" LEVEL 1;
+COMP "S_pin<2>" LOCATE = SITE "G4" LEVEL 1;
+COMP "S_pin<3>" LOCATE = SITE "F2" LEVEL 1;
+COMP "sonido_pin" LOCATE = SITE "D15" LEVEL 1;
+COMP "control_motor_pin<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "control_motor_pin<1>" LOCATE = SITE "L5" LEVEL 1;
+COMP "control_motor_pin<2>" LOCATE = SITE "N2" LEVEL 1;
+COMP "control_motor_pin<3>" LOCATE = SITE "M3" LEVEL 1;
+COMP "RX_pin" LOCATE = SITE "G5" LEVEL 1;
+COMP "TX_pin" LOCATE = SITE "J2" LEVEL 1;
+COMP "lcd_rs_pin" LOCATE = SITE "P12" LEVEL 1;
+COMP "lcd_rw_pin" LOCATE = SITE "J1" LEVEL 1;
+COMP "lcd_data_pin<0>" LOCATE = SITE "H3" LEVEL 1;
+COMP "lcd_data_pin<1>" LOCATE = SITE "G2" LEVEL 1;
+COMP "lcd_data_pin<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "lcd_data_pin<3>" LOCATE = SITE "K16" LEVEL 1;
+COMP "lcd_data_pin<4>" LOCATE = SITE "F15" LEVEL 1;
+COMP "lcd_data_pin<5>" LOCATE = SITE "E2" LEVEL 1;
+COMP "lcd_data_pin<6>" LOCATE = SITE "E1" LEVEL 1;
+COMP "lcd_data_pin<7>" LOCATE = SITE "F3" LEVEL 1;
+NET "Clk_pin_BUFGP/IBUFG" BEL "Clk_pin_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

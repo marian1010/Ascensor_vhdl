@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "E:\uni\4\SE\Practica5\pcores\my_multiple_periferic_v1_00_a\devl\synthesis\my_multiple_periferic_xst.prj"
+-top my_multiple_periferic
+-p virtex6
+-ofn "E:\uni\4\SE\Practica5\pcores\my_multiple_periferic_v1_00_a\devl\synthesis\my_multiple_periferic_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib my_multiple_periferic_v1_00_a
